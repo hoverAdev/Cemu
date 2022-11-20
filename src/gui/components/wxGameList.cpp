@@ -400,10 +400,11 @@ int wxGameList::SortComparator(uint64 titleId1, uint64 titleId2, SortData* sortD
 	const auto& name1 = GetNameByTitleId(titleId1);
 	const auto& name2 = GetNameByTitleId(titleId2);
 
-	if(sortData->dir > 0)
-		return order_to_int(std::tie(isFavoriteB, name1) <=> std::tie(isFavoriteA, name2));
-	else
-		return order_to_int(std::tie(isFavoriteB, name2) <=> std::tie(isFavoriteA, name1));
+	// if(sortData->dir > 0)
+	// 	return order_to_int(std::tie(isFavoriteB, name1) <=> std::tie(isFavoriteA, name2));
+	// else
+	// 	return order_to_int(std::tie(isFavoriteB, name2) <=> std::tie(isFavoriteA, name1));
+    return 1;
 }
 
 int wxGameList::SortFunction(wxIntPtr item1, wxIntPtr item2, wxIntPtr sortData)

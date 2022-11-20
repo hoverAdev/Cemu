@@ -16,7 +16,7 @@
 .vscode
 .idea/
 
-build/
+build*/
 out/
 .cache/
 bin/Cemu_*
@@ -46,3 +46,5 @@ bin/controllerProfiles/*
 bin/gameProfiles/*
 
 bin/graphicPacks/*
+
+**/.DS_Store
